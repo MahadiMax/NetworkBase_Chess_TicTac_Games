@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.JoinController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PIC/host.png" />
+         </image>
+      </ImageView>
+      <TextField id="glass" fx:id="tx" alignment="CENTER" layoutX="243.0" layoutY="204.0" prefHeight="44.0" prefWidth="316.0" promptText="Enter Code" stylesheets="@stylesheet.css" />
+      <Button id="red" fx:id="join" layoutX="371.0" layoutY="263.0" mnemonicParsing="false" onAction="#joinMatch" prefHeight="25.0" prefWidth="142.0" stylesheets="@stylesheet.css" text="Join Match" />
+      <Button id="glass" fx:id="back" layoutX="294.0" layoutY="263.0" mnemonicParsing="false" onAction="#backButton" prefHeight="25.0" prefWidth="63.0" stylesheets="@stylesheet.css" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-border-radius: 50; -fx-background-radius: 50;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.client.LoginWindowController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="550.0" prefWidth="400.0" style="-fx-background-color: #233143; -fx-background-radius: 0px 10px 10px 0px;" HBox.hgrow="ALWAYS">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="205.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PIC/tic-tac-toe.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets top="-30.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="550.0" prefWidth="445.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="72.0" prefWidth="423.0" spacing="350.0" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets top="-50.0" />
+               </VBox.margin>
+               <children>
+                  <!-- Remove FontAwesomeIconView and replace with alternative content -->
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+            <!-- Remove FontAwesomeIconView and replace with alternative content -->
+            <Label text="Player Login" textFill="#233143">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <!-- Remove FontAwesomeIconView and replace with alternative content -->
+                  <TextField id="glass" fx:id="usernameField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="325.0" promptText="UserName" stylesheets="@stylesheet.css" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <!-- Remove FontAwesomeIconView and replace with alternative content -->
+                  <PasswordField id="glass" fx:id="passwordField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="325.0" promptText="Password" stylesheets="@stylesheet.css" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="50.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <padding>
+                  <Insets left="40.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="-10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button id="dark" fx:id="loginBtn" defaultButton="true" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="163.0" stylesheets="@stylesheet.css" text="Log In" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font name="Tahoma" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Label text="OR" textFill="#233143">
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button id="glass" mnemonicParsing="false" onAction="#switchRegister" prefHeight="31.0" prefWidth="172.0" styleClass="btn-signin" stylesheets="@stylesheet.css" text="Register" textFill="#233143">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Label textFill="#233143">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button id="red" fx:id="backhomepage" layoutX="136.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#backToHomepage" prefHeight="31.0" prefWidth="172.0" stylesheets="@stylesheet.css" text="Back to Homepage" textFill="#233143">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

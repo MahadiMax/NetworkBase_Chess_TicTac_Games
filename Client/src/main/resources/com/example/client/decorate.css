@@ -1,0 +1,14 @@
+/* Apply styles to the button */
+.btn-play {
+    -fx-background-color: ; /* Pink background color */
+    -fx-text-fill: white; /* Text color */
+    -fx-background-radius: 20; /* Background curvature */
+    -fx-padding: 5 15 5 15; /* Padding around the button */
+}
+
+/* Hover effect with a curved border */
+.btn-play:hover {
+     -fx-background-color: #511c77; /* Lighter pink background color */
+        -fx-background-radius: 10; /* Background curvature */
+
+}
