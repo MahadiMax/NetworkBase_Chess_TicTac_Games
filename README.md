@@ -1,4 +1,5 @@
 The project includes two multiplayer networked games: Chess and Tic-Tac-Toe.
+
 In Chess,
 1. Users can register and log in securely.
 2. A global chat feature allows anonymous communication.
